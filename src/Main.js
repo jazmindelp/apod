@@ -30,7 +30,7 @@ const Main = () =>{
 
     const getImageRequest = async () =>{
 
-        const url =`https://api.nasa.gov/planetary/apod?api_key=2YoLDcyjKt5JnsTm3MrZSyCjOHdPdCht671Bsffg&date=${dateFormat}`
+        const url =`https://api.nasa.gov/planetary/apod?api_key=apiKey&date=${dateFormat}`
     
         const response = await fetch(url);
         const responseJson = await response.json();
