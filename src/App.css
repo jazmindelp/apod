@@ -1,0 +1,270 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Mohave', 'sans-serif'
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+
+ 
+}
+
+::-webkit-scrollbar-track {
+  background: #9CDBFF;
+  margin-top: 70px;
+  margin-bottom: 20px;
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff9e58bd;
+  border-radius: 10px;
+ 
+}
+
+.apod-date{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  background-color: #141516;
+  padding: 1em;
+  font-family: 'Bebas Neue', cursive;
+  justify-content: space-between;
+}
+
+.apod-description{
+  /* margin-top: 17em; */
+  background-color:#9CDBFF;
+ padding: 1.25em 2em;
+ border-radius: 4px;
+}
+
+.discover{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #020f16;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.intro{
+  margin-top: 1em;
+  color: #020f16;
+  line-height: 1.8;
+  text-align: justify;
+  font-size: 1.075em;
+}
+.apod-title{
+  font-size: 1.8em;
+  width: 100%;
+  margin-bottom: 0.45em;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  color: #ecf8ff;
+  padding: 0.25em 0;
+}
+
+.pick-date{
+  color: #ecf8ff;
+  text-align: center;
+  margin: auto 0;
+  font-size: 1.25em;
+}
+.main{
+  display: flex;
+}
+
+.page-container{
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9cdbff27;
+  width: 100%;
+ 
+}
+.main-image-container{
+  height: 90vh;
+  margin-top: 6vw;
+}
+
+.img-container{
+  height: 70vh;
+  border-radius: 8px;
+  margin: 1em auto;
+  width: 80%;
+
+}
+.image{
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+
+}
+
+.picker-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em auto;
+}
+.react-datepicker-popper {
+  top: -0.5em !important;
+}
+
+.react-datepicker-wrapper{
+  width: auto !important;
+ 
+}
+
+.react-datepicker__input-container {
+  width: 100% !important;
+  border: none!important;
+  margin: 0 !important;
+}
+input{
+  width: 5.25em;
+  height: auto;
+  border-radius: 4px;
+  background-color: #eaf7ff;
+  text-align: center;
+  font-size: 1.25em;
+  margin: auto;
+  padding: 0;
+  border: none;
+  color: #050303;
+  font-family: 'Bebas Neue', cursive;
+}
+
+span{
+ position: static !important;
+  top: -1px;
+  font-size: 20px;
+  width: 0;
+}
+.react-datepicker{
+  position: sticky !important;
+
+}
+.react-datepicker__header {
+  text-align: center;
+  background-color: #f0f0f0 !important;
+  border-bottom: 1px solid #aeaeae;
+  border-top-left-radius: 0.3rem;
+  padding: 8px 0;
+
+}
+.react-datepicker__month {
+margin: 0 !important;
+  text-align: center;
+}
+.react-datepicker__day--selected{
+  background-color: #092536 !important;
+}
+
+.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header {
+  margin-top: 0;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.944rem;
+  font-family: 'Bebas Neue', cursive !important;
+  font-weight: 70;
+  letter-spacing: 0.03em;
+  font-weight: lighter;
+}
+
+.static-text{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: 1vw auto;
+  height: 15vw;
+}
+
+.title{
+  font-size: 1.5em;
+  color: #141516;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+
+}
+
+.options {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5vw;
+  
+}
+
+.option-button{
+  background-color: #141516;
+  font-family: 'Mohave', 'sans-serif';
+  border: none;
+  padding: 0.8em;
+  border-radius: 10px;
+  color: #f0f0f0;
+  letter-spacing: 0.06em;
+}
+
+
+.option-button:hover{
+color: #020f16;
+cursor: pointer;
+box-shadow: inset 200px 0px 0px 10px rgba(255, 157, 87, 1);
+scale: 1.05;
+transition: color 0.5s, box-shadow 1.5s, scale 1s;
+border-radius: 10px;
+
+
+}
+
+
+.icon-container{
+  display: flex;
+  margin: 0em auto 0.5em auto;
+  justify-content: flex-end;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* loading bar */
+
+.loading-box{
+  position: relative;
+  width: 18vw;
+  height: 1vw;
+  border-radius: 50px;
+  border: 2px solid #ededed;
+  overflow: hidden;
+  margin-top: 12vw;
+
+}
+
+.loading-bar{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50px;
+  background: linear-gradient(45deg,#B9CAEA, #FFD2E7, #e8e3ff);
+  left: 0%;
+
+}
+
+.loading-bar{
+  left: -100%;
+  animation: load 2s linear infinite;
+}
+
+@keyframes load{
+  0%{
+      left: -100%;
+  }
+  100%{
+      left: 100%;
+  }
+}
